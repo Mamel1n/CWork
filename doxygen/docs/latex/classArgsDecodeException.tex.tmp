@@ -1,0 +1,57 @@
+\hypertarget{classArgsDecodeException}{}\doxysection{Класс Args\+Decode\+Exception}
+\label{classArgsDecodeException}\index{ArgsDecodeException@{ArgsDecodeException}}
+
+
+Класс для исключений при декодировании аргументов.  
+
+
+
+
+{\ttfamily \#include $<$exceptions.\+h$>$}
+
+
+
+Граф наследования\+:Args\+Decode\+Exception\+:
+% FIG 0
+
+
+Граф связей класса Args\+Decode\+Exception\+:
+% FIG 1
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classArgsDecodeException_a53f4781f3b346af754200bf9d77b7a75}{Args\+Decode\+Exception}} (const std\+::string \&message, const std\+::string \&func, const std\+::string \&log\+\_\+path, bool critical=false)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classArgsDecodeException}{Args\+Decode\+Exception}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для исключений при декодировании аргументов. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classArgsDecodeException_a53f4781f3b346af754200bf9d77b7a75}\label{classArgsDecodeException_a53f4781f3b346af754200bf9d77b7a75}} 
+\index{ArgsDecodeException@{ArgsDecodeException}!ArgsDecodeException@{ArgsDecodeException}}
+\index{ArgsDecodeException@{ArgsDecodeException}!ArgsDecodeException@{ArgsDecodeException}}
+\doxysubsubsection{\texorpdfstring{ArgsDecodeException()}{ArgsDecodeException()}}
+{\footnotesize\ttfamily Args\+Decode\+Exception\+::\+Args\+Decode\+Exception (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message,  }\item[{const std\+::string \&}]{func,  }\item[{const std\+::string \&}]{log\+\_\+path,  }\item[{bool}]{critical = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classArgsDecodeException}{Args\+Decode\+Exception}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & Сообщение об ошибке. \\
+\hline
+{\em func} & Имя функции, в которой возникло исключение. \\
+\hline
+{\em log\+\_\+path} & Путь к файлу журнала. \\
+\hline
+{\em critical} & Флаг критичности исключения. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/mamelin/server/source/modules/\mbox{\hyperlink{exceptions_8h}{exceptions.\+h}}\item 
+/home/student/Документы/mamelin/server/source/modules/exceptions.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,2 @@
+[Critical]	[2024-11-20 20:18:48]	ArgsDecodeException in Interface::parseArgs: Invalid port number.
+[Critical]	[2024-11-20 20:20:37]	DataDecodeException in Interface::readDB: Invalid line format in database file.

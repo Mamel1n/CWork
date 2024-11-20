@@ -1,0 +1,154 @@
+\hypertarget{classNetwork}{}\doxysection{Класс Network}
+\label{classNetwork}\index{Network@{Network}}
+
+
+Класс для управления сетевым подключением и взаимодействием.  
+
+
+
+
+{\ttfamily \#include $<$network.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNetwork_a2fc2d3edf50767f6bb11fc083610d761}{Network}} (const std\+::string \&address, uint16\+\_\+t port, const std\+::map$<$ std\+::string, std\+::string $>$ \&database, const std\+::string \&log\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classNetwork}{Network}}. \end{DoxyCompactList}\item 
+std\+::string \& \mbox{\hyperlink{classNetwork_acd21533d3ca49b5c44b804e98f8f5c40}{get\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения адреса сервера. \end{DoxyCompactList}\item 
+uint16\+\_\+t \& \mbox{\hyperlink{classNetwork_a666b76f78e54de6f08fb968275ccac4e}{get\+Port}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения порта сервера. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, std\+::string $>$ \& \mbox{\hyperlink{classNetwork_a22c7fc71e88d285baeafb186c2e03037}{get\+Database}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения базы данных пользователей. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetwork_a0671b3a74b520585e591f2d577dfaad3}{wait}} ()
+\begin{DoxyCompactList}\small\item\em Метод для ожидания соединений. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetwork_a0113e8cf367e5150bf364874ae517b32}{auth}} ()
+\begin{DoxyCompactList}\small\item\em Метод для аутентификации пользователя. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetwork_a0eb5d336cee486306d65479d8fba559b}{calc}} ()
+\begin{DoxyCompactList}\small\item\em Метод для вычисления суммы значений в векторах. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNetwork_a3f458cdba8f5c7136faaad3cb5d2f7c9}\label{classNetwork_a3f458cdba8f5c7136faaad3cb5d2f7c9}} 
+void {\bfseries close} ()
+\begin{DoxyCompactList}\small\item\em Метод для закрытия клиентского соединения. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNetwork_a6f7c872ffc5d69b0efdfaf42506086d4}\label{classNetwork_a6f7c872ffc5d69b0efdfaf42506086d4}} 
+void {\bfseries quit} ()
+\begin{DoxyCompactList}\small\item\em Метод для закрытия основного соединения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для управления сетевым подключением и взаимодействием. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classNetwork_a2fc2d3edf50767f6bb11fc083610d761}\label{classNetwork_a2fc2d3edf50767f6bb11fc083610d761}} 
+\index{Network@{Network}!Network@{Network}}
+\index{Network@{Network}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{Network()}{Network()}}
+{\footnotesize\ttfamily Network\+::\+Network (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{address,  }\item[{uint16\+\_\+t}]{port,  }\item[{const std\+::map$<$ std\+::string, std\+::string $>$ \&}]{database,  }\item[{const std\+::string \&}]{log\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classNetwork}{Network}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em address} & Адрес сервера. \\
+\hline
+{\em port} & Порт сервера. \\
+\hline
+{\em database} & База данных пользователей. \\
+\hline
+{\em log\+\_\+path} & Путь к файлу логов. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classNetwork_a0113e8cf367e5150bf364874ae517b32}\label{classNetwork_a0113e8cf367e5150bf364874ae517b32}} 
+\index{Network@{Network}!auth@{auth}}
+\index{auth@{auth}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{auth()}{auth()}}
+{\footnotesize\ttfamily void Network\+::auth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для аутентификации пользователя. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classNetworkException}{Network\+Exception}}} & Если не удалось прочитать логин, найти логин в базе данных, отправить или получить данные от клиента. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classNetwork_a0eb5d336cee486306d65479d8fba559b}\label{classNetwork_a0eb5d336cee486306d65479d8fba559b}} 
+\index{Network@{Network}!calc@{calc}}
+\index{calc@{calc}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{calc()}{calc()}}
+{\footnotesize\ttfamily void Network\+::calc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для вычисления суммы значений в векторах. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classNetworkException}{Network\+Exception}}} & Если не удалось прочитать данные от клиента или отправить результат. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classNetwork_acd21533d3ca49b5c44b804e98f8f5c40}\label{classNetwork_acd21533d3ca49b5c44b804e98f8f5c40}} 
+\index{Network@{Network}!getAddress@{getAddress}}
+\index{getAddress@{getAddress}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{getAddress()}{getAddress()}}
+{\footnotesize\ttfamily std\+::string \& Network\+::get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для получения адреса сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+Адрес сервера. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_a22c7fc71e88d285baeafb186c2e03037}\label{classNetwork_a22c7fc71e88d285baeafb186c2e03037}} 
+\index{Network@{Network}!getDatabase@{getDatabase}}
+\index{getDatabase@{getDatabase}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{getDatabase()}{getDatabase()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, std\+::string $>$ \& Network\+::get\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для получения базы данных пользователей. 
+
+\begin{DoxyReturn}{Возвращает}
+База данных пользователей. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_a666b76f78e54de6f08fb968275ccac4e}\label{classNetwork_a666b76f78e54de6f08fb968275ccac4e}} 
+\index{Network@{Network}!getPort@{getPort}}
+\index{getPort@{getPort}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily uint16\+\_\+t \& Network\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для получения порта сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+Порт сервера. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_a0671b3a74b520585e591f2d577dfaad3}\label{classNetwork_a0671b3a74b520585e591f2d577dfaad3}} 
+\index{Network@{Network}!wait@{wait}}
+\index{wait@{wait}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily void Network\+::wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для ожидания соединений. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classNetworkException}{Network\+Exception}}} & Если не удалось создать, привязать или слушать сокет. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/mamelin/server/source/modules/\mbox{\hyperlink{network_8h}{network.\+h}}\item 
+/home/student/Документы/mamelin/server/source/modules/network.\+cpp\end{DoxyCompactItemize}

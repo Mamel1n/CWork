@@ -1,0 +1,11 @@
+digraph "/home/student/Документы/mamelin/server/source/modules"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_22fb07c32903deae4bcae239e40eaa4b {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="source", fontname="Helvetica", fontsize="10", URL="dir_22fb07c32903deae4bcae239e40eaa4b.html"]
+  dir_5f9c566b68d3a44c25bbab949dc0adc2 [shape=box, label="modules", style="filled,bold,", fillcolor="#edf0f7", color="grey25", URL="dir_5f9c566b68d3a44c25bbab949dc0adc2.html"];
+  }
+}

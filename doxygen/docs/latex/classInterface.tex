@@ -1,0 +1,161 @@
+\hypertarget{classInterface}{}\doxysection{Класс Interface}
+\label{classInterface}\index{Interface@{Interface}}
+
+
+Класс для управления интерфейсом программы.  
+
+
+
+
+{\ttfamily \#include $<$interface.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInterface_a3c2384b5a07991ada02fa4a5698fd5af}{Interface}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Конструктор принимает параметры командной строки. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInterface_a9fbb2f12539837325b46667be09362fe}{parse\+Args}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Метод для парсинга аргументов командной строки. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInterface_ac4b8616a3ab492019dd68899910ca6dd}{read\+DB}} ()
+\begin{DoxyCompactList}\small\item\em Метод для чтения базы данных паролей и записи в атрибут map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInterface_a090a950300a463d91f8f361d3b333906}{run}} ()
+\begin{DoxyCompactList}\small\item\em Метод для запуска сервера. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classInterface_a4d4abe80e544fb1af93fa6f1087a2848}\label{classInterface_a4d4abe80e544fb1af93fa6f1087a2848}} 
+void {\bfseries show\+Help} () const
+\begin{DoxyCompactList}\small\item\em Метод для вывода справки. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNetwork}{Network}} $\ast$ \mbox{\hyperlink{classInterface_a18a656811fe38155d08a68e81f35432e}{get\+Network}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения объекта \mbox{\hyperlink{classNetwork}{Network}}. \end{DoxyCompactList}\item 
+std\+::string \& \mbox{\hyperlink{classInterface_ab1ca37e91c4b8086fafd650f612e31ae}{get\+Db\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения пути к файлу базы данных. \end{DoxyCompactList}\item 
+std\+::string \& \mbox{\hyperlink{classInterface_ad9b37a59b7c35e33f619cd1d6309a759}{get\+Log\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения пути к файлу логов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для управления интерфейсом программы. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classInterface_a3c2384b5a07991ada02fa4a5698fd5af}\label{classInterface_a3c2384b5a07991ada02fa4a5698fd5af}} 
+\index{Interface@{Interface}!Interface@{Interface}}
+\index{Interface@{Interface}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{Interface()}{Interface()}}
+{\footnotesize\ttfamily Interface\+::\+Interface (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Конструктор принимает параметры командной строки. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em argc} & Количество аргументов командной строки. \\
+\hline
+{\em argv} & Аргументы командной строки. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classArgsDecodeException}{Args\+Decode\+Exception}}} & Если аргументы командной строки некорректны. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classInterface_ab1ca37e91c4b8086fafd650f612e31ae}\label{classInterface_ab1ca37e91c4b8086fafd650f612e31ae}} 
+\index{Interface@{Interface}!getDbPath@{getDbPath}}
+\index{getDbPath@{getDbPath}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{getDbPath()}{getDbPath()}}
+{\footnotesize\ttfamily std\+::string \& Interface\+::get\+Db\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для получения пути к файлу базы данных. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к файлу базы данных. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterface_ad9b37a59b7c35e33f619cd1d6309a759}\label{classInterface_ad9b37a59b7c35e33f619cd1d6309a759}} 
+\index{Interface@{Interface}!getLogPath@{getLogPath}}
+\index{getLogPath@{getLogPath}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{getLogPath()}{getLogPath()}}
+{\footnotesize\ttfamily std\+::string \& Interface\+::get\+Log\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для получения пути к файлу логов. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к файлу логов. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterface_a18a656811fe38155d08a68e81f35432e}\label{classInterface_a18a656811fe38155d08a68e81f35432e}} 
+\index{Interface@{Interface}!getNetwork@{getNetwork}}
+\index{getNetwork@{getNetwork}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{getNetwork()}{getNetwork()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNetwork}{Network}} $\ast$ Interface\+::get\+Network (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для получения объекта \mbox{\hyperlink{classNetwork}{Network}}. 
+
+\begin{DoxyReturn}{Возвращает}
+Указатель на объект класса \mbox{\hyperlink{classNetwork}{Network}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterface_a9fbb2f12539837325b46667be09362fe}\label{classInterface_a9fbb2f12539837325b46667be09362fe}} 
+\index{Interface@{Interface}!parseArgs@{parseArgs}}
+\index{parseArgs@{parseArgs}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{parseArgs()}{parseArgs()}}
+{\footnotesize\ttfamily void Interface\+::parse\+Args (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Метод для парсинга аргументов командной строки. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em argc} & Количество аргументов командной строки. \\
+\hline
+{\em argv} & Аргументы командной строки. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classArgsDecodeException}{Args\+Decode\+Exception}}} & Если аргументы командной строки некорректны. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classInterface_ac4b8616a3ab492019dd68899910ca6dd}\label{classInterface_ac4b8616a3ab492019dd68899910ca6dd}} 
+\index{Interface@{Interface}!readDB@{readDB}}
+\index{readDB@{readDB}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{readDB()}{readDB()}}
+{\footnotesize\ttfamily void Interface\+::read\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для чтения базы данных паролей и записи в атрибут map. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classIOException}{IOException}}} & Если не удалось открыть или прочитать файл базы данных. \\
+\hline
+{\em \mbox{\hyperlink{classDataDecodeException}{Data\+Decode\+Exception}}} & Если строки в базе данных имеют некорректный формат или произошла ошибка при чтении файла. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classInterface_a090a950300a463d91f8f361d3b333906}\label{classInterface_a090a950300a463d91f8f361d3b333906}} 
+\index{Interface@{Interface}!run@{run}}
+\index{run@{run}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Interface\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для запуска сервера. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classNetworkException}{Network\+Exception}}} & Если возникли ошибки при запуске сервера. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/mamelin/server/source/modules/\mbox{\hyperlink{interface_8h}{interface.\+h}}\item 
+/home/student/Документы/mamelin/server/source/modules/interface.\+cpp\end{DoxyCompactItemize}

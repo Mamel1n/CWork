@@ -1,0 +1,51 @@
+\hypertarget{namespacecrutils}{}\doxysection{Пространство имен crutils}
+\label{namespacecrutils}\index{crutils@{crutils}}
+
+
+Пространство имен для криптографических утилит.  
+
+
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{namespacecrutils_af391e600829c5fee279cb64033d91bb9}{generate\+Salt}} ()
+\begin{DoxyCompactList}\small\item\em Функция для генерации соли. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacecrutils_abae09e1ad6775a7a6223376033b0d03d}{calculate\+Hash}} (const std\+::string \&data)
+\begin{DoxyCompactList}\small\item\em Функция для вычисления хеша. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Пространство имен для криптографических утилит. 
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{namespacecrutils_abae09e1ad6775a7a6223376033b0d03d}\label{namespacecrutils_abae09e1ad6775a7a6223376033b0d03d}} 
+\index{crutils@{crutils}!calculateHash@{calculateHash}}
+\index{calculateHash@{calculateHash}!crutils@{crutils}}
+\doxysubsubsection{\texorpdfstring{calculateHash()}{calculateHash()}}
+{\footnotesize\ttfamily std\+::string crutils\+::calculate\+Hash (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Функция для вычисления хеша. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Данные для хеширования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Хеш в виде строки. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacecrutils_af391e600829c5fee279cb64033d91bb9}\label{namespacecrutils_af391e600829c5fee279cb64033d91bb9}} 
+\index{crutils@{crutils}!generateSalt@{generateSalt}}
+\index{generateSalt@{generateSalt}!crutils@{crutils}}
+\doxysubsubsection{\texorpdfstring{generateSalt()}{generateSalt()}}
+{\footnotesize\ttfamily std\+::string crutils\+::generate\+Salt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция для генерации соли. 
+
+\begin{DoxyReturn}{Возвращает}
+Соль в виде строки. 
+\end{DoxyReturn}

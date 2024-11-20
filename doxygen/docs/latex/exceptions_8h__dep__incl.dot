@@ -1,0 +1,14 @@
+digraph "/home/student/Документы/mamelin/server/source/modules/exceptions.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="/home/student/Документы\l/mamelin/server/source/modules\l/exceptions.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Определение классов исключений."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="/home/student/Документы\l/mamelin/server/source/modules\l/interface.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_8h.html",tooltip="Определение класса интерфейса."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="/home/student/Документы\l/mamelin/server/source/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html",tooltip="Главный файл программы."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="/home/student/Документы\l/mamelin/server/source/modules\l/network.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$network_8h.html",tooltip="Определения классов для управления сетевым взаимодействием."];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

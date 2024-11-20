@@ -1,0 +1,43 @@
+\hypertarget{interface_8h_source}{}\doxysection{interface.\+h}
+\label{interface_8h_source}\index{/home/student/Документы/mamelin/server/source/modules/interface.h@{/home/student/Документы/mamelin/server/source/modules/interface.h}}
+\mbox{\hyperlink{interface_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef INTERFACE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define INTERFACE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{exceptions_8h}{exceptions.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{network_8h}{network.h}}"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{classInterface}{Interface}}}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{30     \mbox{\hyperlink{classInterface_a3c2384b5a07991ada02fa4a5698fd5af}{Interface}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[]);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{classInterface_a9fbb2f12539837325b46667be09362fe}{parseArgs}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[]);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{classInterface_ac4b8616a3ab492019dd68899910ca6dd}{readDB}}();}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{classInterface_a090a950300a463d91f8f361d3b333906}{run}}();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} \mbox{\hyperlink{classInterface_a4d4abe80e544fb1af93fa6f1087a2848}{showHelp}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{62     \mbox{\hyperlink{classNetwork}{Network}} *\mbox{\hyperlink{classInterface_a18a656811fe38155d08a68e81f35432e}{getNetwork}}();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{68     std::string \&\mbox{\hyperlink{classInterface_ab1ca37e91c4b8086fafd650f612e31ae}{getDbPath}}();}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{74     std::string \&\mbox{\hyperlink{classInterface_ad9b37a59b7c35e33f619cd1d6309a759}{getLogPath}}();}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 \textcolor{keyword}{private}:}
+\DoxyCodeLine{77     \mbox{\hyperlink{classNetwork}{Network}} *network; }
+\DoxyCodeLine{78     std::string db\_path; }
+\DoxyCodeLine{79     std::string log\_path; }
+\DoxyCodeLine{80     \textcolor{keywordtype}{int} port; }
+\DoxyCodeLine{81     std::string address; }
+\DoxyCodeLine{82     std::map<std::string, std::string> database; }
+\DoxyCodeLine{83 \};}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// INTERFACE\_H}}
+
+\end{DoxyCode}

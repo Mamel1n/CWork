@@ -1,0 +1,15 @@
+digraph "/home/student/Документы/mamelin"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_deea9ac2ebb701b26350058d0b80c84f {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,dashed,", label="Документы", fontname="Helvetica", fontsize="10", URL="dir_deea9ac2ebb701b26350058d0b80c84f.html"]
+  subgraph clusterdir_740f32a072bfbac6d4844fefaed987f7 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_740f32a072bfbac6d4844fefaed987f7.html"]
+    dir_740f32a072bfbac6d4844fefaed987f7 [shape=plaintext, label="mamelin"];
+  dir_faa9984fdeeeb3eead275b7a90d2f630 [shape=box, label="server", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_faa9984fdeeeb3eead275b7a90d2f630.html"];
+  }
+  }
+}

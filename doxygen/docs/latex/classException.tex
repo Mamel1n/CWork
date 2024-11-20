@@ -1,0 +1,80 @@
+\hypertarget{classException}{}\doxysection{Класс Exception}
+\label{classException}\index{Exception@{Exception}}
+
+
+Базовый класс для исключений.  
+
+
+
+
+{\ttfamily \#include $<$exceptions.\+h$>$}
+
+
+
+Граф наследования\+:Exception\+:
+% FIG 0
+
+
+Граф связей класса Exception\+:
+% FIG 1
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classException_a64a731e50d60cb4492e195680952eae9}{Exception}} (const std\+::string \&name, const std\+::string \&message, const std\+::string \&func, const std\+::string \&log\+\_\+path, bool critical=false)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classException}{Exception}}. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{classException_a91eace2bc486fa18d3f913a28f3921f8}{what}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Метод для получения сообщения об ошибке. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classException_a2b88ac79e90d828270a311544777e6f2}\label{classException_a2b88ac79e90d828270a311544777e6f2}} 
+void {\bfseries log\+Exception} () const
+\begin{DoxyCompactList}\small\item\em Метод для логирования исключения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Базовый класс для исключений. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classException_a64a731e50d60cb4492e195680952eae9}\label{classException_a64a731e50d60cb4492e195680952eae9}} 
+\index{Exception@{Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{Exception()}{Exception()}}
+{\footnotesize\ttfamily Exception\+::\+Exception (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{message,  }\item[{const std\+::string \&}]{func,  }\item[{const std\+::string \&}]{log\+\_\+path,  }\item[{bool}]{critical = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classException}{Exception}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя исключения. \\
+\hline
+{\em message} & Сообщение об ошибке. \\
+\hline
+{\em func} & Имя функции, в которой возникло исключение. \\
+\hline
+{\em log\+\_\+path} & Путь к файлу журнала. \\
+\hline
+{\em critical} & Флаг критичности исключения. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classException_a91eace2bc486fa18d3f913a28f3921f8}\label{classException_a91eace2bc486fa18d3f913a28f3921f8}} 
+\index{Exception@{Exception}!what@{what}}
+\index{what@{what}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily const char $\ast$ Exception\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+
+
+Метод для получения сообщения об ошибке. 
+
+\begin{DoxyReturn}{Возвращает}
+Сообщение об ошибке. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/mamelin/server/source/modules/\mbox{\hyperlink{exceptions_8h}{exceptions.\+h}}\item 
+/home/student/Документы/mamelin/server/source/modules/exceptions.\+cpp\end{DoxyCompactItemize}

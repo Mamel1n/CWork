@@ -1,0 +1,49 @@
+\hypertarget{network_8h_source}{}\doxysection{network.\+h}
+\label{network_8h_source}\index{/home/student/Документы/mamelin/server/source/modules/network.h@{/home/student/Документы/mamelin/server/source/modules/network.h}}
+\mbox{\hyperlink{network_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef NETWORK\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define NETWORK\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{crutils_8h}{crutils.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{exceptions_8h}{exceptions.h}}"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{classNetwork}{Network}}}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31     \mbox{\hyperlink{classNetwork_a2fc2d3edf50767f6bb11fc083610d761}{Network}}(}
+\DoxyCodeLine{32         \textcolor{keyword}{const} std::string \&address,}
+\DoxyCodeLine{33         uint16\_t port,}
+\DoxyCodeLine{34         \textcolor{keyword}{const} std::map<std::string, std::string> \&database,}
+\DoxyCodeLine{35         \textcolor{keyword}{const} std::string \&log\_path);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{41     std::string \&\mbox{\hyperlink{classNetwork_acd21533d3ca49b5c44b804e98f8f5c40}{getAddress}}();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{47     uint16\_t \&\mbox{\hyperlink{classNetwork_a666b76f78e54de6f08fb968275ccac4e}{getPort}}();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{53     std::map<std::string, std::string> \&\mbox{\hyperlink{classNetwork_a22c7fc71e88d285baeafb186c2e03037}{getDatabase}}();}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} \mbox{\hyperlink{classNetwork_a0671b3a74b520585e591f2d577dfaad3}{wait}}();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} \mbox{\hyperlink{classNetwork_a0113e8cf367e5150bf364874ae517b32}{auth}}();}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{71     \textcolor{keywordtype}{void} \mbox{\hyperlink{classNetwork_a0eb5d336cee486306d65479d8fba559b}{calc}}();}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} \mbox{\hyperlink{classNetwork_a3f458cdba8f5c7136faaad3cb5d2f7c9}{close}}();}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} \mbox{\hyperlink{classNetwork_a6f7c872ffc5d69b0efdfaf42506086d4}{quit}}();}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83 \textcolor{keyword}{private}:}
+\DoxyCodeLine{84     std::string address;                         }
+\DoxyCodeLine{85     uint16\_t port;                               }
+\DoxyCodeLine{86     std::map<std::string, std::string> database; }
+\DoxyCodeLine{87     \textcolor{keywordtype}{int} socket;                                  }
+\DoxyCodeLine{88     \textcolor{keywordtype}{int} client\_socket;                           }
+\DoxyCodeLine{89     std::string log\_path;                        }
+\DoxyCodeLine{90 \};}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// NETWORK\_H}}
+
+\end{DoxyCode}

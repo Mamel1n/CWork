@@ -1,0 +1,73 @@
+\hypertarget{exceptions_8h_source}{}\doxysection{exceptions.\+h}
+\label{exceptions_8h_source}\index{/home/student/Документы/mamelin/server/source/modules/exceptions.h@{/home/student/Документы/mamelin/server/source/modules/exceptions.h}}
+\mbox{\hyperlink{exceptions_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef EXCEPTIONS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define EXCEPTIONS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <exception>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{classException}{Exception}} : \textcolor{keyword}{public} std::exception \{}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{29     \mbox{\hyperlink{classException_a64a731e50d60cb4492e195680952eae9}{Exception}}(\textcolor{keyword}{const} std::string \&name,}
+\DoxyCodeLine{30               \textcolor{keyword}{const} std::string \&message,}
+\DoxyCodeLine{31               \textcolor{keyword}{const} std::string \&func,}
+\DoxyCodeLine{32               \textcolor{keyword}{const} std::string \&log\_path,}
+\DoxyCodeLine{33               \textcolor{keywordtype}{bool} critical = \textcolor{keyword}{false});}
+\DoxyCodeLine{34     }
+\DoxyCodeLine{39     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* \mbox{\hyperlink{classException_a91eace2bc486fa18d3f913a28f3921f8}{what}}() \textcolor{keyword}{const} \textcolor{keyword}{noexcept} \textcolor{keyword}{override};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \mbox{\hyperlink{classException_a2b88ac79e90d828270a311544777e6f2}{logException}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{keyword}{private}:}
+\DoxyCodeLine{47     std::string name; }
+\DoxyCodeLine{48     std::string func; }
+\DoxyCodeLine{49     std::string log\_path; }
+\DoxyCodeLine{50     \textcolor{keywordtype}{bool} critical; }
+\DoxyCodeLine{51     \textcolor{keyword}{mutable} std::string message; }
+\DoxyCodeLine{52 \};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{57 \textcolor{keyword}{class }\mbox{\hyperlink{classIOException}{IOException}} : \textcolor{keyword}{public} \mbox{\hyperlink{classException}{Exception}} \{}
+\DoxyCodeLine{58 \textcolor{keyword}{public}:}
+\DoxyCodeLine{66     \mbox{\hyperlink{classIOException_a386064b4e1fe8dad9134bd128b717f31}{IOException}}(\textcolor{keyword}{const} std::string \&message,}
+\DoxyCodeLine{67                 \textcolor{keyword}{const} std::string \&func,}
+\DoxyCodeLine{68                 \textcolor{keyword}{const} std::string \&log\_path,}
+\DoxyCodeLine{69                 \textcolor{keywordtype}{bool} critical = \textcolor{keyword}{false});}
+\DoxyCodeLine{70 \};}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{75 \textcolor{keyword}{class }\mbox{\hyperlink{classArgsDecodeException}{ArgsDecodeException}} : \textcolor{keyword}{public} \mbox{\hyperlink{classException}{Exception}} \{}
+\DoxyCodeLine{76 \textcolor{keyword}{public}:}
+\DoxyCodeLine{84     \mbox{\hyperlink{classArgsDecodeException_a53f4781f3b346af754200bf9d77b7a75}{ArgsDecodeException}}(\textcolor{keyword}{const} std::string \&message,}
+\DoxyCodeLine{85                         \textcolor{keyword}{const} std::string \&func,}
+\DoxyCodeLine{86                         \textcolor{keyword}{const} std::string \&log\_path,}
+\DoxyCodeLine{87                         \textcolor{keywordtype}{bool} critical = \textcolor{keyword}{false});}
+\DoxyCodeLine{88 \};}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{93 \textcolor{keyword}{class }\mbox{\hyperlink{classDataDecodeException}{DataDecodeException}} : \textcolor{keyword}{public} \mbox{\hyperlink{classException}{Exception}} \{}
+\DoxyCodeLine{94 \textcolor{keyword}{public}:}
+\DoxyCodeLine{102     \mbox{\hyperlink{classDataDecodeException_aed86b2ba3190d9fd1808b3b20568dae1}{DataDecodeException}}(\textcolor{keyword}{const} std::string \&message,}
+\DoxyCodeLine{103                         \textcolor{keyword}{const} std::string \&func,}
+\DoxyCodeLine{104                         \textcolor{keyword}{const} std::string \&log\_path,}
+\DoxyCodeLine{105                         \textcolor{keywordtype}{bool} critical = \textcolor{keyword}{false});}
+\DoxyCodeLine{106 \};}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{111 \textcolor{keyword}{class }\mbox{\hyperlink{classAuthException}{AuthException}} : \textcolor{keyword}{public} \mbox{\hyperlink{classException}{Exception}} \{}
+\DoxyCodeLine{112 \textcolor{keyword}{public}:}
+\DoxyCodeLine{120     \mbox{\hyperlink{classAuthException_a0da942847fea260c2503f13ce2f0d3cd}{AuthException}}(\textcolor{keyword}{const} std::string \&message,}
+\DoxyCodeLine{121                   \textcolor{keyword}{const} std::string \&func,}
+\DoxyCodeLine{122                   \textcolor{keyword}{const} std::string \&log\_path,}
+\DoxyCodeLine{123                   \textcolor{keywordtype}{bool} critical = \textcolor{keyword}{false});}
+\DoxyCodeLine{124 \};}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{129 \textcolor{keyword}{class }\mbox{\hyperlink{classNetworkException}{NetworkException}} : \textcolor{keyword}{public} \mbox{\hyperlink{classException}{Exception}} \{}
+\DoxyCodeLine{130 \textcolor{keyword}{public}:}
+\DoxyCodeLine{138     \mbox{\hyperlink{classNetworkException_a2db5f0be3be055854e01bd2575230785}{NetworkException}}(\textcolor{keyword}{const} std::string \&message,}
+\DoxyCodeLine{139                      \textcolor{keyword}{const} std::string \&func,}
+\DoxyCodeLine{140                      \textcolor{keyword}{const} std::string \&log\_path,}
+\DoxyCodeLine{141                      \textcolor{keywordtype}{bool} critical = \textcolor{keyword}{false});}
+\DoxyCodeLine{142 \};}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// EXCEPTIONS\_H}}
+
+\end{DoxyCode}
