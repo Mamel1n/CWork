@@ -142,17 +142,17 @@ TEST(NetworkInitializationTest)
 {
     std::map<std::string, std::string> database;
     database["user"] = "P@ssW0rd";
-    Network network("127.0.0.1", 33333, database, "./log.txt");
+    Network network("127.0.0.1", 12345, database, "./log.txt");
     CHECK_EQUAL(std::string("127.0.0.1"), network.getAddress());
-    CHECK_EQUAL((uint16_t)33333, network.getPort());
+    CHECK_EQUAL((uint16_t)12345, network.getPort());
     CHECK_EQUAL(std::string("P@ssW0rd"), network.getDatabase().at("user"));
     network.quit();
 }
 
 /**
- * @brief Тест для проверки аутентификации.
+ * @brief Тест для проверки успешного взаимодейсвия.
  */
-TEST(NetworkAuthTest)
+TEST(NetworkSuccessTest)
 {
     std::map<std::string, std::string> database;
     database["user"] = "P@ssW0rd";
